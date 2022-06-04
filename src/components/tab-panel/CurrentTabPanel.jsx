@@ -11,7 +11,7 @@ export const CurrentTabPannel = ({ country }) => {
       setError("");
       try {
         const data = await fetch(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${country.latitude}&lon=${country.longitude}&appid=96c377c77756cb8cef9974c902770b49
+          `https://api.openweathermap.org/data/2.5/weather?lat=${country.latitude}&lon=${country.longitude}&appid=${process.env.REACT_APP_API}
           `
         );
         const result = await data.json();

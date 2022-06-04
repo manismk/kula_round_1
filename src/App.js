@@ -5,10 +5,10 @@ import { useState } from "react";
 
 function App() {
   const [selectedCountry, setSelectedCountry] = useState(null);
-  console.log(selectedCountry);
 
   return (
     <div className="App">
+      <h1 className="message">Weather App</h1>
       <CountrySelect countryChange={(country) => setSelectedCountry(country)} />
       <TabContainer country={selectedCountry} />
     </div>

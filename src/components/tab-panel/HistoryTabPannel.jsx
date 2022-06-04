@@ -10,13 +10,12 @@ export const HistoryTabPannel = ({ country }) => {
       setError("");
       try {
         const data = await fetch(
-          `https://api.openweathermap.org/data/2.5/onecall?lat=${country.latitude}&lon=${country.longitude}&appid=96c377c77756cb8cef9974c902770b49
+          `https://api.openweathermap.org/data/2.5/onecall?lat=${country.latitude}&lon=${country.longitude}&appid=${process.env.REACT_APP_API}
           `
         );
 
         const result = await data.json();
         const dailyData = result.daily;
-        console.log(dailyData);
         setHistoryData(dailyData);
       } catch (err) {
         console.log(err);

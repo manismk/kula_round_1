@@ -12,7 +12,6 @@ const countriesList = [
 
 export const CountrySelect = ({ countryChange }) => {
   const changeHandler = (option) => {
-    console.log(option);
     countryChange(option);
   };
   return (
