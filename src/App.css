@@ -1,0 +1,32 @@
+.App {
+  max-width: 50rem;
+  margin: 2rem auto;
+}
+
+.tab {
+  margin-top: 2rem;
+}
+
+.message {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.tab-panel-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.temp-label {
+  font-weight: 700;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
